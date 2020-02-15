@@ -6,6 +6,10 @@ a:hover {
   color: #1074e7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif !important;
   overflow-x: hidden;
@@ -169,6 +173,9 @@ footer .codeOfConduct {
 }
 
 @media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 30px;
+  }
   nav .logo {
     text-align: center;
     padding-bottom: 30px;
@@ -201,7 +208,7 @@ footer .codeOfConduct {
   .speaker__card {
     width: 300px;
     height: 400px;
-    margin: 40px auto;
+    margin: 25px auto;
   }
   .speaker__image::after {
     width: 260px;
