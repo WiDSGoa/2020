@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/salil-naik/product.css/v-2.0/product.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <nav>
@@ -19,9 +20,8 @@
 
                 <div class="cell large-6">
                     <ul>
-                        <li>About WiDS Goa</li>
-                        <li>WiDS Standord</li>
-                        <li>Code of conduct, footer</li>
+                        <li><a href="#about">About WiDS Goa</a></li>
+                        <li><a href="https://www.widsconference.org/" target="_blank">WiDS Standord</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,12 +40,66 @@
                 </div>
 
                 <div class="cell large-12">
-                    <div class="speaker-container">
+                    <h2>Speakers for the event</h2>
+                    <div class="speaker wrapper">
+                        <div>
+                            <div class="speaker__card">
+                                <div class="speaker__image">
+                                    <p class="speaker__details">Salil Naik, founder of Letzcode</p>
+                                </div>
+                            </div>
+                        </div>
                         
+                        <div>
+                            <div class="speaker__card">
+                                <div class="speaker__image">
+                                    <p class="speaker__details">Salil Naik, founder of Letzcode</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="speaker__card">
+                                <div class="speaker__image">
+                                    <p class="speaker__details">Salil Naik, founder of Letzcode</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell large-12">
+                    <div class="about" id="about">
+                        <h2 class="about__title">About WiDS Goa</h2>
+                        <p class="about__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet tenetur nihil consectetur reprehenderit quo praesentium perspiciatis eius aliquam, laudantium expedita iusto quia placeat suscipit, nemo quidem minus, voluptates id blanditiis. Possimus nihil tempore sit quidem, repellat id soluta quis dolor, ratione cupiditate molestiae officia, quia consequuntur fugit accusantium quos accusamus ipsa? Pariatur modi molestiae incidunt nostrum deleniti tempore tempora nulla. Et, minima? Quo omnis harum, aut itaque necessitatibus sed molestiae quidem sint libero ducimus ratione vero nam eveniet consectetur? Necessitatibus.</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-6">
+                    <p>Website Designed and Developed by <a href="">Salil Naik</a></p>
+                </div>
+                <div class="cell large-6">
+                    <p class="codeOfConduct"><a href="" target="_blank">WiDS Code of Conduct</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.speaker').slick({
+            autoplay:true,
+            arrows:false,
+            slidesToShow:1,
+            centerMode: true,
+        });
+        });
+    </script>
 </body>
 </html>

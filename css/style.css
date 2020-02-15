@@ -1,5 +1,14 @@
+a, a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #1074e7;
+}
+
 body {
   font-family: 'Open Sans', sans-serif !important;
+  overflow-x: hidden;
 }
 
 nav {
@@ -73,5 +82,103 @@ h1 {
 
 .button--blue:hover {
   background-color: #0366d6;
+}
+
+.speaker.wrapper {
+  background-color: #032f62;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.speaker__card {
+  background-color: white;
+  padding: 20px;
+  width: 340px;
+  height: 440px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.speaker__image {
+  height: 100%;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/awc-2020.appspot.com/o/1573136746547-zhenya.jpg?alt=media&token=454d0f57-9535-441c-a5b6-d2b7d351d2b9");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.speaker__image::after {
+  content: " ";
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #1074e7;
+  mix-blend-mode: overlay;
+}
+
+.speaker__details {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #24292e;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.slick-slide {
+  -webkit-transform: scale(0.8) !important;
+          transform: scale(0.8) !important;
+}
+
+.slick-active.slick-current {
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+}
+
+.slick-list.draggable {
+  overflow: visible;
+}
+
+.about {
+  padding-bottom: 100px;
+}
+
+.about__desc {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: #586069;
+  line-height: 35px;
+}
+
+footer .grid-x {
+  border-top: 1px solid #1074e7;
+  padding: 30px 0;
+}
+
+footer .codeOfConduct {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
