@@ -97,19 +97,6 @@ h2{
     font-size:30px; text-align:center; color:$dark-color; margin-top:100px; margin-bottom:30px;
 }
 
-.slick-slide{
-    transform: scale(0.8) !important;
-}
-
-.slick-active.slick-current{
-    transform: scale(1) !important;
-}
-
-
-.slick-list.draggable{
-    overflow:visible
-}
-
 .about{
     padding-bottom:100px;
     &__desc{
@@ -125,5 +112,71 @@ footer{
 
     .codeOfConduct{
         text-align:right;
+    }
+}
+
+@media only screen and (max-width:640px){
+
+    nav{
+        .logo{text-align:center;padding-bottom:30px;}
+        ul{justify-content: space-evenly; border-top:1px solid $theme-color; padding-top:15px;}
+        li{margin:0;}
+    }
+    .about{
+        padding-bottom:40px;
+        &__desc{
+            text-align:left;
+            line-height:25px;
+            padding:0 20px;
+        }
+
+        &__title{
+            margin-top:40px;
+        }
+    }
+
+    .speaker{
+        &.wrapper{
+            padding:1px 0; border-radius:0;
+        }
+
+        &__card{
+            width:300px; 
+            height:400px;
+            margin:40px auto;
+        }
+
+        &__image{
+
+            &::after{
+                width:260px;
+                height:360px;
+            }
+        }
+
+    }
+
+    footer{
+        p{text-align: center;}
+    
+        .codeOfConduct{
+            margin-top:10px;
+            text-align:center;
+        }
+    }
+}
+
+@media only screen and (min-width:641px){
+    .slick-slide{
+        transform: scale(0.8) !important;
+    }
+    
+    .slick-active.slick-current{
+        transform: scale(1) !important;
+    }
+    
+    
+    .slick-list.draggable{
+        overflow:visible
     }
 }

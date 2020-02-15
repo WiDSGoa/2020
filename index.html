@@ -15,7 +15,7 @@
             <div class="grid-x grid-margin-x">
                 <div class="cell large-6">
                     <!-- <img src="" alt="logo"> -->
-                    <p>Logo will come here</p>
+                    <p class="logo">Logo will come here</p>
                 </div>
 
                 <div class="cell large-6">
@@ -38,7 +38,11 @@
                         <button class="button--blue">Regsiter for the event</button>
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <div class="grid-container full">
+            <div class="grid-x grid-marginx-x">
                 <div class="cell large-12">
                     <h2>Speakers for the event</h2>
                     <div class="speaker wrapper">
@@ -67,7 +71,11 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
+        </div>
+              
+        <div class="grid-container">
+            <div class="grid-x gri-margin-x">
                 <div class="cell large-12">
                     <div class="about" id="about">
                         <h2 class="about__title">About WiDS Goa</h2>
@@ -76,12 +84,13 @@
                 </div>
             </div>
         </div>
+            
     </main>
     <footer>
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="cell large-6">
-                    <p>Website Designed and Developed by <a href="">Salil Naik</a></p>
+                    <p>Website Designed and Developed by <a href="" style="color:#1074e7; text-decoration: underline;">Salil Naik</a></p>
                 </div>
                 <div class="cell large-6">
                     <p class="codeOfConduct"><a href="" target="_blank">WiDS Code of Conduct</a></p>
@@ -98,6 +107,12 @@
             arrows:false,
             slidesToShow:1,
             centerMode: true,
+            responsive:[
+                {
+                    breakpoint: 640,
+                    settings:"unslick",
+                }
+            ],
         });
         });
     </script>

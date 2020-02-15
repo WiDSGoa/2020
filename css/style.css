@@ -147,20 +147,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-.slick-slide {
-  -webkit-transform: scale(0.8) !important;
-          transform: scale(0.8) !important;
-}
-
-.slick-active.slick-current {
-  -webkit-transform: scale(1) !important;
-          transform: scale(1) !important;
-}
-
-.slick-list.draggable {
-  overflow: visible;
-}
-
 .about {
   padding-bottom: 100px;
 }
@@ -180,5 +166,67 @@ footer .grid-x {
 
 footer .codeOfConduct {
   text-align: right;
+}
+
+@media only screen and (max-width: 640px) {
+  nav .logo {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  nav ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    border-top: 1px solid #1074e7;
+    padding-top: 15px;
+  }
+  nav li {
+    margin: 0;
+  }
+  .about {
+    padding-bottom: 40px;
+  }
+  .about__desc {
+    text-align: left;
+    line-height: 25px;
+    padding: 0 20px;
+  }
+  .about__title {
+    margin-top: 40px;
+  }
+  .speaker.wrapper {
+    padding: 1px 0;
+    border-radius: 0;
+  }
+  .speaker__card {
+    width: 300px;
+    height: 400px;
+    margin: 40px auto;
+  }
+  .speaker__image::after {
+    width: 260px;
+    height: 360px;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer .codeOfConduct {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .slick-slide {
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important;
+  }
+  .slick-active.slick-current {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+  .slick-list.draggable {
+    overflow: visible;
+  }
 }
 /*# sourceMappingURL=style.css.map */
