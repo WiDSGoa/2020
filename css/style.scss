@@ -7,6 +7,15 @@ a:hover{
     color:$theme-color
 }
 
+a.button{
+    &--blue{
+        color:white;
+        &:hover{
+            color:white;
+        }
+    }
+}
+
 html{scroll-behavior: smooth;}
 body{
     font-family: 'Open Sans', sans-serif !important; overflow-x:hidden;
@@ -25,6 +34,10 @@ nav{
             color:$theme-color
         }
     }
+}
+
+.logo{
+    height:50px;
 }
 
 h1{
@@ -48,7 +61,7 @@ h1{
 }
 
 .button{
-    font-size:14px; padding:20px; border-radius:3px; outline:0; border:0; font-weight: 600; cursor: pointer;
+    font-size:14px; padding:20px; border-radius:3px; outline:0; border:0; font-weight: 600; cursor: pointer; width:188px;
 
     &--blue{
         @extend .button;
@@ -74,10 +87,25 @@ h1{
     }
 
     &__image{
-        height:100%;
-        background-image:url('https://firebasestorage.googleapis.com/v0/b/awc-2020.appspot.com/o/1573136746547-zhenya.jpg?alt=media&token=454d0f57-9535-441c-a5b6-d2b7d351d2b9');
-        background-size:cover; background-repeat:no-repeat; position: relative; display:flex; flex-direction: column; justify-content: flex-end;
+        height:100%; background-size:cover; background-repeat:no-repeat; position: relative; display:flex; flex-direction: column; justify-content: flex-end;
 
+
+        &--one{
+            @extend .speaker__image;
+            background-image:url('../images/dikshita.png');
+        }
+
+
+        &--two{
+            @extend .speaker__image;
+            background-image: url('../images/stella.png');
+        }
+
+        &--three{
+            @extend .speaker__image;
+            background-image: url('../images/shipra.png');
+        }
+        
         &::after{
             content: " ";
             height:400px; width:300px; 
@@ -91,6 +119,7 @@ h1{
     &__details{
         text-align:center;
         font-size:18px; padding:20px; color:white; font-weight: bold;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); mix-blend-mode: none !important;
     }
 }
 

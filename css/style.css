@@ -6,6 +6,14 @@ a:hover {
   color: #1074e7;
 }
 
+a.button--blue {
+  color: white;
+}
+
+a.button--blue:hover {
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -45,6 +53,10 @@ nav li:hover {
   color: #1074e7;
 }
 
+.logo {
+  height: 50px;
+}
+
 h1 {
   font-size: 40px;
   text-align: center;
@@ -77,6 +89,7 @@ h1 {
   border: 0;
   font-weight: 600;
   cursor: pointer;
+  width: 188px;
 }
 
 .button--blue {
@@ -105,9 +118,8 @@ h1 {
   margin: auto;
 }
 
-.speaker__image {
+.speaker__image, .speaker__image--one, .speaker__image--two, .speaker__image--three {
   height: 100%;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/awc-2020.appspot.com/o/1573136746547-zhenya.jpg?alt=media&token=454d0f57-9535-441c-a5b6-d2b7d351d2b9");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -123,7 +135,19 @@ h1 {
           justify-content: flex-end;
 }
 
-.speaker__image::after {
+.speaker__image--one {
+  background-image: url("../images/dikshita.png");
+}
+
+.speaker__image--two {
+  background-image: url("../images/stella.png");
+}
+
+.speaker__image--three {
+  background-image: url("../images/shipra.png");
+}
+
+.speaker__image::after, .speaker__image--one::after, .speaker__image--two::after, .speaker__image--three::after {
   content: " ";
   height: 400px;
   width: 300px;
@@ -141,6 +165,8 @@ h1 {
   padding: 20px;
   color: white;
   font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: none !important;
 }
 
 h2 {
@@ -210,7 +236,7 @@ footer .codeOfConduct {
     height: 400px;
     margin: 40px auto;
   }
-  .speaker__image::after {
+  .speaker__image::after, .speaker__image--one::after, .speaker__image--two::after, .speaker__image--three::after {
     width: 260px;
     height: 360px;
   }
