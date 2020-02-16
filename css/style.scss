@@ -150,8 +150,12 @@ footer{
     h1{font-size:30px}
 
     nav{
-        .logo{text-align:center;padding-bottom:30px;}
-        ul{justify-content: space-evenly; border-top:1px solid $theme-color; padding-top:15px;}
+        .logo{
+            height: 40px;
+            display: block;
+            margin: auto;
+        }
+        ul{justify-content: space-evenly; border-top:1px solid $theme-color; padding-top:15px;margin-top:20px;}
         li{margin:0;}
     }
     .about{

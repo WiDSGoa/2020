@@ -203,8 +203,9 @@ footer .codeOfConduct {
     font-size: 30px;
   }
   nav .logo {
-    text-align: center;
-    padding-bottom: 30px;
+    height: 40px;
+    display: block;
+    margin: auto;
   }
   nav ul {
     -webkit-box-pack: space-evenly;
@@ -212,6 +213,7 @@ footer .codeOfConduct {
             justify-content: space-evenly;
     border-top: 1px solid #1074e7;
     padding-top: 15px;
+    margin-top: 20px;
   }
   nav li {
     margin: 0;
