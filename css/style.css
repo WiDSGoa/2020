@@ -147,16 +147,6 @@ h1 {
   background-image: url("../images/shipra.png");
 }
 
-.speaker__image::after, .speaker__image--one::after, .speaker__image--two::after, .speaker__image--three::after {
-  height: 400px;
-  width: 300px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #00b140;
-}
-
 .speaker__details {
   text-align: center;
   font-size: 18px;
@@ -260,6 +250,26 @@ footer .codeOfConduct {
   }
   .slick-list.draggable {
     overflow: visible;
+  }
+  .slick-arrow {
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    background-color: white;
+    outline: none;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .slick-arrow:hover {
+    background-color: #24292e;
+    color: white;
+  }
+  .slick-arrow.slick-next {
+    right: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -108,14 +108,14 @@ h1{
             background-image: url('../images/shipra.png');
         }
         
-        &::after{
-            // content: " ";
-            height:400px; width:300px; 
-            position: absolute;
-            top:0; left:0; z-index: 1;
-            background-color:$theme-color; 
-            // mix-blend-mode: overlay;
-        }
+        // &::after{
+        //     content: " ";
+        //     height:400px; width:300px; 
+        //     position: absolute;
+        //     top:0; left:0; z-index: 1;
+        //     background-color:$theme-color; 
+        //     mix-blend-mode: overlay;
+        // }
     }
 
     &__details{
@@ -216,5 +216,18 @@ footer{
     
     .slick-list.draggable{
         overflow:visible
+    }
+
+    .slick-arrow{
+        height:30px; width:80px; border-radius:15px; background-color:white; outline:none; border:0; position:absolute;
+        top:50%; margin-top:-15px; cursor:pointer; z-index: 2;
+
+        &:hover{
+            background-color:$dark-color; color:white;
+        }
+
+        &.slick-next{
+            right:40px;
+        }
     }
 }
