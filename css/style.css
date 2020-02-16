@@ -3,7 +3,7 @@ a, a:visited {
 }
 
 a:hover {
-  color: #1074e7;
+  color: #00b140;
 }
 
 a.button--blue {
@@ -50,7 +50,7 @@ nav li {
 }
 
 nav li:hover {
-  color: #1074e7;
+  color: #00b140;
 }
 
 .logo {
@@ -70,7 +70,7 @@ h1 {
 }
 
 .hero__date {
-  color: #1074e7;
+  color: #00b140;
   text-align: center;
   font-size: 20px;
   margin-bottom: 20px;
@@ -93,7 +93,7 @@ h1 {
 }
 
 .button--blue {
-  background-color: #1074e7;
+  background-color: #00b140;
   color: white;
 }
 
@@ -102,7 +102,7 @@ h1 {
 }
 
 .speaker.wrapper {
-  background-color: #032f62;
+  background-color: #04752d;
   max-width: 800px;
   margin: auto;
   border-radius: 10px;
@@ -148,15 +148,13 @@ h1 {
 }
 
 .speaker__image::after, .speaker__image--one::after, .speaker__image--two::after, .speaker__image--three::after {
-  content: " ";
   height: 400px;
   width: 300px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #1074e7;
-  mix-blend-mode: overlay;
+  background-color: #00b140;
 }
 
 .speaker__details {
@@ -190,7 +188,7 @@ h2 {
 }
 
 footer .grid-x {
-  border-top: 1px solid #1074e7;
+  border-top: 1px solid #00b140;
   padding: 30px 0;
 }
 
@@ -211,7 +209,7 @@ footer .codeOfConduct {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    border-top: 1px solid #1074e7;
+    border-top: 1px solid #00b140;
     padding-top: 15px;
     margin-top: 20px;
   }

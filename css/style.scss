@@ -1,4 +1,5 @@
-$theme-color: #1074e7;
+// $theme-color: #1074e7;
+$theme-color:#00b140;
 $grey-color: #586069;
 $dark-color: #24292e;
 
@@ -76,7 +77,8 @@ h1{
 
 .speaker{
     &.wrapper{
-        background-color:#032f62;
+        // background-color:#032f62;
+        background-color:#04752d;
         max-width:800px; margin:auto;
         border-radius:10px; padding:40px;
     }
@@ -107,12 +109,12 @@ h1{
         }
         
         &::after{
-            content: " ";
+            // content: " ";
             height:400px; width:300px; 
             position: absolute;
             top:0; left:0; z-index: 1;
             background-color:$theme-color; 
-            mix-blend-mode: overlay;
+            // mix-blend-mode: overlay;
         }
     }
 
