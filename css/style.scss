@@ -178,11 +178,15 @@ footer{
     }
 
     .hero{
+        padding-top:50px;
+        &__date{
+            margin-bottom:30px;
+        }
         &__venue{
             display:flex; flex-direction:column;
         }
         &__venue p{
-            padding:30px 0px;
+            padding:20px 0px;
     
             &:first-child(){
                 border-right:0;
