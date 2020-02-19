@@ -232,6 +232,12 @@ footer .codeOfConduct {
   nav li {
     margin: 0;
   }
+  .hero {
+    padding-top: 50px;
+  }
+  .hero__date {
+    margin-bottom: 30px;
+  }
   .hero__venue {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -242,7 +248,7 @@ footer .codeOfConduct {
             flex-direction: column;
   }
   .hero__venue p {
-    padding: 30px 0px;
+    padding: 20px 0px;
   }
   .hero__venue p:first-child {
     border-right: 0;
