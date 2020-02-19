@@ -54,6 +54,21 @@ h1{
         text-align:center;
         font-size:20px;
         margin-bottom:20px;
+        font-weight: bold;
+    }
+
+    &__venue{
+        display:flex; flex-direction:row;justify-content: center; margin-bottom:20px;
+    }
+    &__venue p{
+        color:$theme-color;
+        text-align:center;
+        font-size:20px;
+        padding:0 30px;
+
+        &:first-child(){
+            border-right:1px solid $theme-color;
+        }
     }
 
     .button--blue{
@@ -70,7 +85,8 @@ h1{
         color:white;
 
         &:hover{
-            background-color:#0366d6; 
+            // background-color:#0366d6; 
+            background-color:#04752d;
         }
     }
 }
@@ -105,7 +121,7 @@ h1{
 
         &--three{
             @extend .speaker__image;
-            background-image: url('../images/shipra.png');
+            background-image: url('../images/nithya.jpg');
         }
         
         // &::after{
@@ -160,6 +176,21 @@ footer{
         ul{justify-content: space-evenly; border-top:1px solid $theme-color; padding-top:15px;margin-top:20px;}
         li{margin:0;}
     }
+
+    .hero{
+        &__venue{
+            display:flex; flex-direction:column;
+        }
+        &__venue p{
+            padding:30px 0px;
+    
+            &:first-child(){
+                border-right:0;
+                border-bottom:1px solid $theme-color;
+            }
+        }
+    }
+
     .about{
         padding-bottom:40px;
         &__desc{
