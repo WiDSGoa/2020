@@ -22,6 +22,7 @@
                     <ul>
                         <li><a href="#about">About WiDS Goa</a></li>
                         <li><a href="https://www.widsconference.org/" target="_blank">WiDS Standord</a></li>
+                        <li onclick="changeColorScheme()" id="toggle">Turn Blue</li>
                     </ul>
                 </div>
             </div>
@@ -120,6 +121,34 @@
             ],
         });
         });
+
+        function changeColorScheme(){
+            // let root = document.documentElement;
+            let greenTheme = '#00b140';
+            let darkGreen = '#04752d';
+
+            let blueTheme = '#1074e7';
+            let darkBlue = '#0366d6';
+            let text = document.getElementById('toggle');
+
+            let root = getComputedStyle(document.documentElement);
+
+            let prop = root.getPropertyValue('--theme-color');
+
+            if(prop == blueTheme){
+                document.documentElement.style.setProperty('--theme-color', greenTheme);
+                document.documentElement.style.setProperty('--dark-color', darkGreen);
+                text.innerHTML = 'Turn Blue';
+                text.style.color = blueTheme;
+            }
+            else{
+                document.documentElement.style.setProperty('--theme-color', blueTheme);
+                document.documentElement.style.setProperty('--dark-color', darkBlue);
+                text.innerHTML = 'Turn Green';
+                text.style.color = greenTheme;
+            }
+        }
+        
     </script>
 </body>
 </html>
