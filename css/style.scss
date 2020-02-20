@@ -139,14 +139,14 @@ h1{
             background-image: url('../images/nithya.jpg');
         }
         
-        // &::after{
-        //     content: " ";
-        //     height:400px; width:300px; 
-        //     position: absolute;
-        //     top:0; left:0; z-index: 1;
-        //     background-color:$theme-color; 
-        //     mix-blend-mode: overlay;
-        // }
+        &::after{
+            content: " ";
+            height:400px; width:300px; 
+            position: absolute;
+            top:0; left:0; z-index: 1;
+            background-color:var(--theme-color); 
+            mix-blend-mode: overlay;
+        }
     }
 
     &__details{
