@@ -99,7 +99,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .hero__venue p {
@@ -225,7 +225,8 @@ footer .codeOfConduct {
 
 @media only screen and (max-width: 640px) {
   h1 {
-    font-size: 30px;
+    font-size: 25px;
+    margin-bottom: 40px;
   }
   nav .logo {
     height: 40px;
@@ -247,7 +248,7 @@ footer .codeOfConduct {
     padding-top: 50px;
   }
   .hero__date {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .hero__venue {
     display: -webkit-box;
@@ -259,11 +260,11 @@ footer .codeOfConduct {
             flex-direction: column;
   }
   .hero__venue p {
-    padding: 20px 0px;
+    padding: 14px 0px;
   }
   .hero__venue p:first-child {
     border-right: 0;
-    border-bottom: 1px solid var(--theme-color);
+    border-bottom: thin solid var(--theme-color);
   }
   .about {
     padding-bottom: 40px;

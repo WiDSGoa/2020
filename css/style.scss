@@ -73,7 +73,7 @@ h1{
     }
 
     &__venue{
-        display:flex; flex-direction:row;justify-content: center; margin-bottom:20px;
+        display:flex; flex-direction:row;justify-content: center; margin-bottom:40px;
     }
     &__venue p{
         color:var(--theme-color);
@@ -180,7 +180,7 @@ footer{
 
 @media only screen and (max-width:640px){
 
-    h1{font-size:30px}
+    h1{font-size:25px; margin-bottom:40px}
 
     nav{
         .logo{
@@ -195,17 +195,17 @@ footer{
     .hero{
         padding-top:50px;
         &__date{
-            margin-bottom:30px;
+            margin-bottom:10px;
         }
         &__venue{
             display:flex; flex-direction:column;
         }
         &__venue p{
-            padding:20px 0px;
+            padding:14px 0px;
     
             &:first-child(){
                 border-right:0;
-                border-bottom:1px solid var(--theme-color);
+                border-bottom: thin solid var(--theme-color);
             }
         }
     }
