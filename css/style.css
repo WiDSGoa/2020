@@ -184,18 +184,6 @@ h1 {
   background-image: url("../images/nithya.jpg");
 }
 
-.speaker__image::after, .speaker__image--one::after, .speaker__image--two::after, .speaker__image--three::after {
-  content: " ";
-  height: 400px;
-  width: 300px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: var(--theme-color);
-  mix-blend-mode: overlay;
-}
-
 .speaker__details {
   text-align: center;
   font-size: 18px;
