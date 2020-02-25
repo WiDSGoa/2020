@@ -202,16 +202,16 @@ h2 {
   margin-bottom: 30px;
 }
 
-.about {
-  padding-bottom: 100px;
-}
-
 .about__desc {
   max-width: 800px;
   margin: auto;
   text-align: center;
   color: #586069;
   line-height: 35px;
+}
+
+footer {
+  margin-top: 100px;
 }
 
 footer .grid-x {
@@ -221,6 +221,22 @@ footer .grid-x {
 
 footer .codeOfConduct {
   text-align: right;
+}
+
+table {
+  margin: auto;
+  font-size: 14px;
+}
+
+table th {
+  text-align: left;
+}
+
+table td, table th {
+  padding: 10px 20px;
+  max-width: 240px;
+  border-collapse: collapse;
+  border: thin solid grey;
 }
 
 @media only screen and (max-width: 640px) {
@@ -296,6 +312,9 @@ footer .codeOfConduct {
   footer .codeOfConduct {
     margin-top: 10px;
     text-align: center;
+  }
+  .table-container {
+    overflow-x: scroll;
   }
 }
 
